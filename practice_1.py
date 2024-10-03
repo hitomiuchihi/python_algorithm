@@ -17,7 +17,41 @@ def is_prime(n):
 
 # 問題2:N 番目のフィボナッチ数を返す関数 fibonacci(n)
 def fibonacci(n):
-    return "fib"
+    if n < 0:
+        return "please input positive integer."
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
 
 print(fibonacci(10))  # 55
+
+# 問題3: 文字列が与えられたとき、その文字列が回文かどうかを判定する関数 is_palindrome(s)
+def is_palindrome(str):
+    reversed_str = str[::-1]
+    if str == reversed_str:
+        return True
+    else:
+        return False
+
+print(is_palindrome("racecar"))  # True
+print(is_palindrome("hello"))    # False
+
+# 問題4: 整数 n に対してその階乗を返す関数 factorial(n)
+def factorial(n):
+    for i in range(n-1, 0, -1):
+        print(F"n:{n}, i:{i}")
+        n = n * i
+    return n
+
+print(factorial(5))  # 120
+
+# 問題5: 与えられた整数の配列から最大値を返す関数 find_max(arr)
+def find_max(arr):
+    max_num = max(arr)
+    return max_num
+
+print(find_max([1, 5, 9, 3, 7]))  # 9
