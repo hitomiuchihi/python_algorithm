@@ -42,3 +42,18 @@ print(family.items())
 
 for k,v in family.items():
     print(k, v)
+
+numbers = [1,9,4,5,6,3,2]
+characters = ['あ', 'ん', 'う', 'お', 'か', 'え']
+print(sorted(numbers))
+print(sorted(characters))
+print(reversed(sorted(numbers)))
+print(reversed(sorted(characters)))
+print(list(reversed(sorted(numbers))))
+print(list(reversed(sorted(characters))))
+
+list_a = [2, 4, 6]
+list_b = ['a', 'b', 'c']
+
+for a, b in zip(list_a, list_b):
+    print(f"a:{a}, b:{b}, a*b:{a*b}")
