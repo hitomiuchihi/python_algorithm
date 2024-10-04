@@ -37,8 +37,8 @@ def is_palindrome(str):
     else:
         return False
 
-print(is_palindrome("racecar"))  # True
-print(is_palindrome("hello"))    # False
+#print(is_palindrome("racecar"))  # True
+#print(is_palindrome("hello"))    # False
 
 # 問題4: 整数 n に対してその階乗を返す関数 factorial(n)
 def factorial(n):
@@ -47,11 +47,12 @@ def factorial(n):
         n = n * i
     return n
 
-print(factorial(5))  # 120
+#print(factorial(5))  # 120
 
 # 問題5: 与えられた整数の配列から最大値を返す関数 find_max(arr)
 def find_max(arr):
     max_num = max(arr)
     return max_num
 
-print(find_max([1, 5, 9, 3, 7]))  # 9
+#print(find_max([1, 5, 9, 3, 7]))  # 9
+
