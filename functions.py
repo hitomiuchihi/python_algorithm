@@ -57,3 +57,26 @@ list_b = ['a', 'b', 'c']
 
 for a, b in zip(list_a, list_b):
     print(f"a:{a}, b:{b}, a*b:{a*b}")
+
+def function(num, *args, **kwargs):
+    print(num)
+    print(args)
+    print(kwargs)
+
+function(1, 'one', kwargs1='kw1', kwargs='kw2')
+
+function = lambda x, y: (y + 2, x * 4)
+a, b = 2, 5
+a, b = function(a, b)
+print(a, b)
+
+def function(a, b):
+    """
+    1行目には、クラスや関数の説明コメントを書く
+
+    3行目には詳細な説明（呼び出しや引数についてなど）
+    """
+    return a + b
+
+print(function.__doc__)
+
